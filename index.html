@@ -5,6 +5,7 @@
 	  <title>la météo</title>
 	  <meta charset="UTF-8">
 	  <link rel="stylesheet" href="meteo.css">
+	  <script  src="meteo.js"></script>
 	
 	</head>
 
@@ -13,23 +14,33 @@
 	<header class="entête">
 	<h1> TP Météo HTML</h1>
 	</header>
+	
+	<label for="choix"> <em>  Choix de la ville : </em></label>
+	<select onchange=showCity(this) id="menu" name="choix" >
+	<option value="choixville"></option>
+	<option value="Lyon">Lyon </option>
+	<option value="Marseille">Marseille </option>
+	<option value="Rouen">Rouen </option>	
+	</select>
 
 	<div class="temp">
 
-    <div class="Lyon">
+	<div id="choixville">
+	<h2> <strong>En attente du choix de la ville!!</strong> </h2>
+	</div>
+		
+        <div id="Lyon" class="city" style="display:none;">
 	<h2>Lyon <img src="lyon icone.png" height=100px width=100px></h2>
 	<p>8°, nuageux</p>
-	
 	</div>
 	
 	
-	<div class="Rouen">
+	<div id="Rouen" class="city" style="display:none;">
 	<h2>Rouen <img src="rouen icone.png" height=100px width=100px></h2>
 	<p>10°, pluvieux</p>
-	
 	</div>
 	
-	<div class="Marseille">
+	<div id="Marseille" class="city" style="display:none;">
 	<h2>Marseille <img src="marseille icone.png" height=100px width=100px></h2>
 	<p>28°, ensoleillé</p>
 	</div>
@@ -38,7 +49,7 @@
 	
 	
 	<footer>
-	<p> CHARAF Majda Icones météo par <a href="https://thenounproject.com/search/collection/?q=weather">Noun Project</a></p>
+	<p> CHARAF Majda <br> Icones météo par <a href="https://thenounproject.com/search/collection/?q=weather">Noun Project</a></p>
 	</footer>
 	
 	</body>
