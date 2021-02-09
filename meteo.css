@@ -1,0 +1,50 @@
+
+.entête {
+	background-color : black;
+	color : white;
+	text-align : center;
+	margin : 10px 0 10px 0 ;
+	padding : 10px 10px;
+}
+
+.Lyon, .Marseille, .Rouen {
+
+	background-color : rgb(180,180,180);
+	color : black;
+	margin : 20px 10px 20px 10px;
+	padding : 10px 10px ;
+	width : 450px;		
+	height : 200px;
+	text-align : center;
+	font-size:20px;
+	
+}
+
+
+img{
+background-color : rgb(180,180,180);
+height:50px
+vertical-align:middle;
+}
+
+footer {
+	padding : 5px;
+	background-color : rgb(240, 240, 240);
+	color : black;
+	margin :10px 10px 10px 10px ;
+	padding:30px 10px 30px 10px;
+
+}
+.temp {
+	display : flex;
+	flex-direction:raw;
+	justify-content: center;
+	margin:130px 0 130px 0;
+	width : 100%;
+	flex-flow: row wrap;
+	
+	
+}
+footer a{
+		color : blue;
+}
